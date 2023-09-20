@@ -1,7 +1,7 @@
 
 .entirePage { background-color: black;
     color: rgb(94, 183, 218);
-    display:grid;
+    display: block;
     grid-template-columns: 4fr 1fr;
     column-gap: 5px;
 }
@@ -24,7 +24,7 @@
     font-weight: bold;
 }
 
-.firstImage, .renderImage { width : 300px;
+.firstImage, .renderImage { width : 40%;
 }
 
 .leftSide {
