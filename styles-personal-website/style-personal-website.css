@@ -2,7 +2,7 @@
 .entirePage { background-color: black;
     color: rgb(94, 183, 218);
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     column-gap: 5px;
 }
 
