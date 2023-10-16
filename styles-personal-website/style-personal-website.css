@@ -1,9 +1,53 @@
+body {
+    background-color: black;
+}
 
-.entirePage { background-color: black;
+button {
+    border: 1px solid blue;
+}
+
+
+.entirePage { 
+    background-color: black;
     color: rgb(94, 183, 218);
-    display: block;
-    grid-template-columns: 4fr 1fr;
-    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: grid;
+    overflow: hidden;
+}
+
+.wrapImages {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.wrapDisplayImages {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imageOne {
+    width: 40%;
+    display: inline-block;
+}
+
+.imageTwo {
+    display: inline-block;
+    width: 40%
+}
+
+img {
+    border-radius: 30px;
+}
+
+
+
+.twoImages {
+    width: 100%
 }
 
 .pageText {
@@ -13,7 +57,7 @@
 .renderHTML {
     opacity:1;
     max-width: 100%;
-      max-height: 100%;
+    max-height: 100%;
   }
 
 .header { background: black;
@@ -22,31 +66,32 @@
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 
-.firstImage, .renderImage { width : 40%;
+.firstImage, .renderImage { 
+    width : 100%;
 }
 
 .leftSide {
 
-    font-family: Arial, Helvetica, sans-serif;
-    border-color: rgb(85, 57, 81);
-    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2.0;
     text-align: justify;
+    padding-left: 10px;
  }
 
 .rightSide { 
-    border-color:rgb(85, 57, 81);
     vertical-align: top;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 
 .leftSide:hover, .rightSide:hover {
-
     color:rgb(94, 183, 218);
-    font-weight: bold;
+
 }
 
 a {
@@ -54,12 +99,12 @@ a {
 }
 
 .contact {
-   padding: 5px;
-   background-color: blue;
+    padding: 5px;
+    background-color: blue;
     border-width: 2px;
     border-radius: 10px;
     margin: 10px;
-    color:rgb(94, 183, 218);
+    color:white;
     transition: background-color 0.4s, color 0.4s;
     cursor:pointer;
     font-weight: bold;
@@ -83,21 +128,39 @@ a {
     padding: 5px;
 }
 
-.imageDisplaybtn {background-color: blue;
+.imageDisplaybtn {
+    background-color: blue;
     font-weight: bold;
     color:white;
     transition: background-color 0.5s, color 0.5s, opacity 0.5s;
     padding: 20px;
     border-radius: 20px;
+    margin: 0 auto;
     }
     
-    .imageDisplaybtn:hover {
+.imageDisplaybtn:hover {
         background-color:white;
         color: blue;
         cursor: pointer;
     }
     
-    .imageDisplaybtn:active {
+.imageDisplaybtn:active {
         opacity: 0.5;
     }
-    
+
+.cvContainer {
+   padding: 10px;
+
+}
+
+.CV {
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s, opacity 0.5s;
+    border-radius: 20px;
+    color:white;
+}
+
+.CV:hover {
+    color:red;
+    cursor: pointer;
+}
