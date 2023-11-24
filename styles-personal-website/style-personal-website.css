@@ -72,12 +72,27 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2.0;
     text-align: justify;
+    flex: 2;
  }
 
+ @media (max-width: 600px) {
+    .leftSide {
+      display: inline-block;
+      /* Add other styles for your container when on mobile */
+      background-color: white;;
+    }
+    .entirePage {
+        display: grid;
+    }
+  }
+
 .rightSide { 
-    vertical-align: top;
+    border-radius: 20px;
+    vertical-align: bottom;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
+    flex: 1;
+    margin-left: 2%;
 }
 
 .leftSide:hover, .rightSide:hover {

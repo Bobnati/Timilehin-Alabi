@@ -1,5 +1,5 @@
 function runImages () {
-    image1 = '<img class="renderImage" src="images-personal-website/timi-horse-3.jpg">';
+    image1 = '<img class="renderImage" src="images-personal-website/piano-AMCorner.jpg">';
 image2 = '<p> <img class="renderImage" src="images-personal-website/timi-lagos-city-cyclers.jpg"> </p>';
 image3 = '<p> <img class="renderImage" src="images-personal-website/bobnati-bass-blackbgd.png"> </p>';
 image4 = '<img class="renderImage" src="images-personal-website/bob-and-debi.png">';
