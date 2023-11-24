@@ -79,7 +79,7 @@ img {
     .leftSide {
       display: inline-block;
       /* Add other styles for your container when on mobile */
-      background-color: white;;
+      background-color: rgb(10, 3, 3);
     }
     .entirePage {
         display: grid;
@@ -128,6 +128,7 @@ a {
     border-width: 1px;
     border-radius: 5px;
     font-size: 10px;
+    margin-bottom: 1%;
 }
 
 .imageDisplaybtn {

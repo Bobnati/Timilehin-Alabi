@@ -19,7 +19,7 @@ function displayImages(timesToDisplayImage, recallFunction) {
     function loopIteration() {
         document.querySelector('.renderHTML').innerHTML = images[ind];
         document.querySelector ('.slideShow').innerHTML = `Good Click!
-        Now Sit back for the quick slideshow!
+        Now scroll up a little and sit back for the quick slideshow!
          You are viewing photo number ${ind} out of ${images.length} photos`
 
         ind++;
