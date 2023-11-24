@@ -51,7 +51,6 @@ img {
 .renderHTML {
     width: 100%;
     max-height: 20%;
-    border: 3px solid green;
   }
 
 .header { background: black;
@@ -65,8 +64,7 @@ img {
 
 .firstImage, .renderImage { 
     width : 100%;
-    object-fit: cover;
-    border: 5px solid blue;
+    object-fit: contain;
 }
 
 .leftSide { 
