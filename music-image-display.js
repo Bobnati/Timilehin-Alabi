@@ -1,17 +1,19 @@
 function runImages () {
-    image1 = '<img class="renderImage" src="images-personal-website/piano-AMCorner.jpg">';
-image2 = '<p> <img class="renderImage" src="images-personal-website/timi-lagos-city-cyclers.jpg"> </p>';
-image3 = '<p> <img class="renderImage" src="images-personal-website/bobnati-bass-blackbgd.png"> </p>';
-image4 = '<img class="renderImage" src="images-personal-website/bob-and-debi.png">';
-image5 = '<img class ="renderImage" src="images-personal-website/bob-and-farmer-lawrence.png">';
-image6 = '<img class ="renderImage" src="images-personal-website/bobnati-convergence-02.jpg">';
-image7 = '<img class ="renderImage" src="images-personal-website/horse-bob-4.jpg">';
-image8 = '<img class ="renderImage" src="images-personal-website/page-thumbnail.png">';
-image9 = '<img class ="renderImage" src="images-personal-website/timi-and-dominion.jpg">';
-image10 = '<img class="renderImage" src="images-personal-website/timi-with-mic.jpg">';
-image11 = '<img class="renderImage" src="images-personal-website/timi-swag.jpg">';
+ const   image1 = '<img class="renderImage" src="images-personal-website/piano-AMCorner.jpg">';
+const image2 = '<p> <img class="renderImage" src="images-personal-website/timi-lagos-city-cyclers.jpg"> </p>';
+const image3 = '<p> <img class="renderImage" src="images-personal-website/bobnati-bass-blackbgd.png"> </p>';
+const image4 = '<img class="renderImage" src="images-personal-website/bob-and-debi.png">';
+const image5 = '<img class ="renderImage" src="images-personal-website/bob-and-farmer-lawrence.png">';
+const image6 = '<img class ="renderImage" src="images-personal-website/horse-bob-4.jpg">';
+const image7 = '<img class ="renderImage" src="images-personal-website/piano-AMC.jpg">';
+const image8 = '<img class ="renderImage" src="images-personal-website/page-thumbnail.png">';
+const image9 = '<img class ="renderImage" src="images-personal-website/timi-and-dominion.jpg">';
+const image10 = '<img class="renderImage" src="images-personal-website/timi-with-mic.jpg">';
+const image11 = '<img class="renderImage" src="images-personal-website/timi-swag.jpg">';
+const image12 = '<img class="renderImage" src="images-personal-website/trad-mesh.jpg">';
+const image13 = '<img class="renderImage" src="images-personal-website/face-mesh.jpg">';
 
-images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11];
+const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13];
 
 function displayImages(timesToDisplayImage, recallFunction) {
     let ind = 0;
