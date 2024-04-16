@@ -1,5 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
+    background-color: #f8f9fa;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+    color:black
 }
 
 button {
@@ -7,159 +17,68 @@ button {
 }
 
 
-.entirePage { 
-    width: 100%;
-    background-color: black;
-    color: rgb(94, 183, 218);
+.page-top {
+    background-color: rgb(199, 95, 113);
+}
+
+.header {
+    display:flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    color: black;
+    font-family:sans-serif, Verdana;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    width: 90%;
+}
+
+.brief-description {
+    padding: 10%;
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
+    font-size: 50px;
+    max-height: 40%;
+    max-width: 70%;
+ 
 }
 
-.wrapImages {
-    width: 100%;
+.for-text {
+    flex:2
 }
 
-.wrapDisplayImages {
-    width: 100%;
-    overflow: hidden;
+.normal-text {
+    font-size: medium;
 }
 
-.imageOne {
-    width: 40%;
-    display: inline-block;
-}
-
-.imageTwo {
-    display: inline-block;
-    width: 40%
+.for-image {
+    flex: 1;
 }
 
 img {
+    width:100%;
     border-radius: 30px;
 }
 
 
-.twoImages {
-    width: 100%
+
+.page-middle {
+    background-image: url('/images-personal-website/work-together.jpg');
+    background-repeat: no-repeat;
+    height: 40vh;
+    align-content: center;
+    background-size: cover;
+   
+
 }
 
-.pageText {
-    max-width: 90%;
-}
+.for-text-middle {
+    margin-left: 4%;
+    background-color: #f8f9fa;
+    opacity: 0.9;
+    width:40%;
 
-.renderHTML {
-    width: 100%;
-    max-height: 20%;
-  }
-
-.header { background: black;
-    color: rgb(94, 183, 218);
-    font-family:sans-serif, Verdana;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    width: 100%;
-}
-
-.firstImage, .renderImage { 
-    width : 100%;
-    object-fit: contain;
-}
-
-.leftSide { 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 2.0;
-    text-align: justify;
-    flex: 2;
- }
-
- @media (max-width: 600px) {
-    .leftSide {
-      display: inline-block;
-      /* Add other styles for your container when on mobile */
-      background-color: rgb(10, 3, 3);
-    }
-    .entirePage {
-        display: grid;
-    }
-  }
-
-.rightSide { 
-    border-radius: 20px;
-    vertical-align: bottom;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
-    flex: 1;
-    margin-left: 2%;
-}
-
-.leftSide:hover, .rightSide:hover {
-    color:rgb(94, 183, 218);
-}
-
-a {
-    color:antiquewhite;
-}
-
-.contact {
-    background-color: blue;
-    border-width: 2px;
-    border-radius: 10px;
-    color:white;
-    transition: background-color 0.4s, color 0.4s;
-    cursor:pointer;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact:hover {
-    background-color: antiquewhite;
-    color: rgb(94, 183, 218);
-}
-
-.twitter-button {
-    display: block;
-    background-color: rgb(57, 57, 138);
-    color:white;
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
-    border-radius: 5px;
-    font-size: 10px;
-    margin-bottom: 1%;
-}
-
-.imageDisplaybtn {
-    background-color: blue;
-    font-weight: bold;
-    color:white;
-    transition: background-color 0.5s, color 0.5s, opacity 0.5s;
-    border-radius: 20px;
-
-    }
-    
-.imageDisplaybtn:hover {
-        background-color:white;
-        color: blue;
-        cursor: pointer;
-    }
-    
-.imageDisplaybtn:active {
-        opacity: 0.5;
-    }
-
-.cvContainer {
-}
-
-.CV {
-    text-decoration: none;
-    transition: background-color 0.5s, color 0.5s, opacity 0.5s;
-    border-radius: 20px;
-    color:white;
-}
-
-.CV:hover {
-    color:red;
-    cursor: pointer;
 }
