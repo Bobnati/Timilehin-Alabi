@@ -54,9 +54,31 @@ button {
     font-size: medium;
 }
 
+
 .for-image {
     flex: 1;
 }
+
+
+@media (max-width: 550px) { 
+    .for-text {
+        padding-top: 20%;
+       font-size: 20px;
+       font-weight: bold;
+    }    
+
+    .normal-text {
+        font-size: medium;
+        font-weight: normal;
+    }
+
+    .for-image {
+        width: 80%;
+        align-items: center;
+        padding-top: 30%;
+    }
+}
+
 
 img {
     width:100%;
