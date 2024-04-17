@@ -1,0 +1,24 @@
+.header {
+    display:flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    color: black;
+    font-family:sans-serif, Verdana;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:black
+}
+
+.blog-nav {
+    background-color: rgb(202, 150, 202);
+    margin-bottom: 1px;
+}

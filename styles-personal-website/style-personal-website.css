@@ -7,10 +7,6 @@ body {
     color:black;
 }
 
-a {
-    text-decoration: none;
-    color:black
-}
 
 button {
     border: 1px solid blue;
@@ -21,20 +17,7 @@ button {
     background-color: rgb(199, 95, 113);
 }
 
-.header {
-    display:flex;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 5vh;
-    color: black;
-    font-family:sans-serif, Verdana;
-    text-align: center;
-    font-weight: bold;
-    position: fixed;
-    width: 90%;
-}
+
 
 .brief-description {
     padding: 10%;

@@ -1,103 +1,99 @@
 
 .entirePage { 
+    padding-top: 3%;
     width: 100%;
-    background-color: black;
-    color: rgb(94, 183, 218);
-    display: flex;
-    flex-direction: row;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    
 }
 
-.wrapImages {
-    width: 40%;
-}
-
-.wrapDisplayImages {
-    width: 100%;
-    overflow: hidden;
-}
-
-.imageOne {
-    width: 40%;
-    display: inline-block;
-}
-
-.imageTwo {
-    display: inline-block;
-    width: 40%
-}
-
-img {
-    border-radius: 30px;
-}
-
-
-.twoImages {
-    width: 100%;
-}
-
-.pageText {
-    max-width: 90%;
-}
 
 .renderHTML {
-    width: 40%;
-    max-height: 20%;
+    flex: 1;
   }
 
-.header { background: black;
-    color: rgb(94, 183, 218);
-    font-family:sans-serif, Verdana;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    width: 100%;
-}
 
 .firstImage, .renderImage { 
     width : 100%;
     object-fit: contain;
 }
 
-.leftSide { 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 2.0;
-    text-align: justify;
-    flex: 2;
+.first-section { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(202, 150, 202);
+    margin-top: 5%;
+    
  }
 
  @media (max-width: 600px) {
-    .leftSide {
-      display: inline-block;
-      /* Add other styles for your container when on mobile */
-      background-color: rgb(10, 3, 3);
-    }
-    .entirePage {
-        display: grid;
-    }
-  }
 
-.rightSide { 
-    border-radius: 20px;
-    vertical-align: bottom;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
+    .first-section {display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 40%;
+        background-color: rgb(202, 150, 202);
+        margin-top: 8%;}
+
+ }
+ 
+ .pageText {
+    font-size: 30px;
+ }
+
+ .first-text {
+    text-align: center;
+    padding-top: 40%;
+ }
+
+ .first-image {
+    width: 60%;
+ }
+
+
+.second-section { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    background-color: rgb(204, 99, 204);  
+    margin-top: 5px;
+}
+
+
+.wrapDisplayImages {
     flex: 1;
-    margin-left: 2%;
-}
+     overflow: hidden;
+     display: flex;
+ }
+ 
+ .second-image-text {
+     flex: 3;
+     font-size: 30px;
+    }
 
-.leftSide:hover, .rightSide:hover {
-    color:rgb(94, 183, 218);
-}
 
 a {
     color:antiquewhite;
 }
+    
+.third-section {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(184, 135, 184);
+}
 
+.text-third-section {
+    flex: 2;
+}
+
+.image-third-section {
+    flex:2;
+}
 .contact {
-    background-color: blue;
+    background-color: rgb(184, 103, 184);
     border-width: 2px;
     border-radius: 10px;
     color:white;
@@ -114,7 +110,7 @@ a {
 
 .twitter-button {
     display: block;
-    background-color: rgb(57, 57, 138);
+    background-color: rgb(135, 57, 138);
     color:white;
     border-style: solid;
     border-color: blue;
@@ -130,7 +126,7 @@ a {
     color:white;
     transition: background-color 0.5s, color 0.5s, opacity 0.5s;
     border-radius: 20px;
-
+    padding: 5px;
     }
     
 .imageDisplaybtn:hover {
@@ -156,4 +152,11 @@ a {
 .CV:hover {
     color:red;
     cursor: pointer;
+}
+
+.fourth-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+background-color: rgb(204, 99, 204);
 }
