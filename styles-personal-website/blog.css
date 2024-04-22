@@ -212,3 +212,18 @@ background-color: rgb(202, 150, 202);
 .fourth-image {
     flex:2;
 }
+
+.first-text-fourth {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.help {
+    font-size: 20px;
+
+}
+
+.contact-me {
+    font-size: 18px;
+ 
+}
