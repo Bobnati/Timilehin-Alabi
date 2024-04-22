@@ -73,6 +73,7 @@
 
 .image-description {
     font-size: 40px;
+    font-weight: bold;
 }
 
 .wrapDisplayImages {
@@ -97,6 +98,9 @@
      font-size: 45px;
     }
 
+.second-text-add {
+   font-size: medium;
+}
 
 a {
     color:antiquewhite;
@@ -112,6 +116,10 @@ a {
 .text-third-section {
     flex: 2;
     margin-right: 5%;
+}
+
+.third-text-add {
+    font-size: 10px;
 }
 
 .image-third-section {
