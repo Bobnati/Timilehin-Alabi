@@ -71,6 +71,9 @@
     margin-top: 5px;
 }
 
+.image-description {
+    font-size: 20px;
+}
 
 .wrapDisplayImages {
     flex: 3;
@@ -86,7 +89,7 @@
  }
 
  .twoImages {
-    max-width: 40%;
+    max-width: 80%;
  }
  
  .second-image-text {
