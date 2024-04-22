@@ -15,13 +15,13 @@ const image13 = '<img class="renderImage" src="images-personal-website/face-mesh
 
 
 const description1 = 'Here I am showcasing my Piano Skills at the American Corner, Ikeja';
-const description2 = 'Chilling with my fellow cyclists at Lagos City Cycling Club!';
+const description2 = 'Chilling with fellow cyclists at Lagos City Cycling Club!';
 const description3 = 'Oh those soothing bass notes';
 const description4 = 'Took this picture with Deborah Omowunmi at a Hangout in Ekiti State Nigeria!';
 const description5 = 'One of the most impactful people I know. Here, I am with Farmer Lawrence, CEO PostAgVest';
 const description6 = 'Among my best birthdays ever. Took myself on a trip to the beach and didnt look back.';
 const description7 = 'Another angle of my piano presentation at the American Corner Ikeja';
-const description8 = 'Took this photo at Amazing Grace Church in 2023';
+const description8 = 'Took this photo at my former Church where I was a pianist in 2023';
 const description9 = 'Took this one there as well. One of my favoutite people there is this talented boy, Dominion';
 const description10 = 'I was being asked to speak at Spur Nation also in Ekiti.';
 const description11 = 'Another one of my older birthday photos';
@@ -42,6 +42,7 @@ function displayImages(timesToDisplayImage, recallFunction) {
          You are viewing photo number ${ind} out of ${images.length} photos`
 
         document.querySelector('.image-description').innerHTML = descriptions[ind];
+
 
          ind++;
 

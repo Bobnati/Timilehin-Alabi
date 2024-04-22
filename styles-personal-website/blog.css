@@ -96,13 +96,13 @@
     width: 100%;
  }
  
- .second-image-text {
+ .second-image-text, .renderHTML {
      flex: 2;
-     font-size: 45px;
     }
 
 .second-text-add {
    font-size: medium;
+   font-weight: normal;
 }
 
 a {
