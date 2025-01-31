@@ -1,5 +1,7 @@
 function runImages () {
- const   image1 = '<img class="renderImage" src="images-personal-website/piano-AMCorner.jpg">';
+
+    //save images from computer to the program
+ const image1 = '<img class="renderImage" src="images-personal-website/piano-AMCorner.jpg">';
 const image2 = '<p> <img class="renderImage" src="images-personal-website/timi-lagos-city-cyclers.jpg"> </p>';
 const image3 = '<p> <img class="renderImage" src="images-personal-website/bobnati-bass-blackbgd.png"> </p>';
 const image4 = '<img class="renderImage" src="images-personal-website/bob-and-debi.png">';
@@ -33,6 +35,8 @@ const images = [image1, image2, image3, image4, image5, image6, image7, image8, 
 const descriptions = [description1, description2, description3, description4, description5, description6, description7, description8,
      description9, description10, description11, description12, description13];
 
+
+     //function that displays images on the page
 function displayImages(timesToDisplayImage, recallFunction) {
     let ind = 0;
 
@@ -46,10 +50,11 @@ function displayImages(timesToDisplayImage, recallFunction) {
 
          ind++;
 
+
         if (ind >= images.length) {
             ind = 0;
             console.log(ind);
-        }
+            }
 
         if (ind < timesToDisplayImage) {
             setTimeout(loopIteration, recallFunction);
