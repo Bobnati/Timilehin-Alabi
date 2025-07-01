@@ -4,26 +4,39 @@ html {
 
 
 .header {
-    display:flex;
+    display: flex;
     text-decoration: none;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    height: 5vh;
+    background-color: rgba(199, 95, 113, 0.9);
     color: black;
     font-family:sans-serif, Verdana;
-    text-align: center;
     font-weight: bold;
     position: fixed;
     width: 100%;
+    transition: all 0.4s ease-in-out;
+    padding: 1%;
 }
+
+.header div:hover{
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(199, 95, 113, 0.9);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(239, 225, 206, 0.5);
+
+}
+
 
 a {
     text-decoration: none;
+
     color:black
 }
 
 .blog-nav {
+
     background-color: rgb(202, 150, 202);
+
     margin-bottom: 1px;
 }

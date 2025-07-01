@@ -1,0 +1,50 @@
+
+body {
+    background-color: black;
+    color:antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    text-decoration: none;
+    background-color: blue;
+    color:white;
+    border-radius: 6px;
+    transition: opacity 0.5s, background-color 0.4s, color 0.5s;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link:hover {
+
+    color: black;
+    background-color: rgba(173, 159, 159, 0.8);
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(173, 159, 159, 0.9);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.link {
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+}

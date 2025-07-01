@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color:  rgba(199, 95, 113);
     color:black;
     text-align: justify;
 }
@@ -15,24 +15,8 @@ button {
 
 
 .page-top {
-    background-color: rgb(199, 95, 113);
+    background-color: rgba(199, 95, 113);
 }
-
-.header {
-
-    margin-top: 2%;
-    transition: all 0.3s ease-in-out;
-}
-
-.header div:hover{
-
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    padding: 1%;
-    transition: all 0.3s ease-in-out;
-
-}
-
 
 
 .brief-description {
