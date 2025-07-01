@@ -12,12 +12,21 @@ button {
     border-radius: 6px;
     transition: opacity 0.5s, background-color 0.4s, color 0.5s;
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 1%;
+    display: block;
 }
 
+button:hover {
+
+    color: black;
+    background-color: blue;
+    box-shadow: 0 0 8px antiquewhite;
+}
 a {
     color: white;
     text-decoration: none;
+    display: inline-block;
 }
 
 .social-media-buttons {
@@ -25,12 +34,24 @@ a {
     flex-direction: column;
 }
 
-.rightSide {
-    width: 50%;
+.social-media-buttons div{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: relative;
 }
+
+.social-media-buttons div::after {
+
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 0%,  rgba(199, 95, 113, 0.9) 30%,  rgba(199, 95, 113, 0.9) 70%, transparent 100%);
+
+
+}
+
 
 .link:hover {
 
@@ -47,4 +68,18 @@ a {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     padding: 5px;
+}
+
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.socials {
+
+    display: flex;
+    flex-direction: column;
 }

@@ -14,15 +14,20 @@ html {
     font-weight: bold;
     position: fixed;
     width: 100%;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.6s ease-in-out;
     padding: 1%;
 }
 
+.header div {
+
+    padding: 1%;
+    border-radius: 10px;
+}
 .header div:hover{
 
     background-color: rgba(0, 0, 0, 0.3);
     color: rgba(199, 95, 113, 0.9);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease-in-out;
     box-shadow: 0 0 15px rgba(239, 225, 206, 0.5);
 
 }
