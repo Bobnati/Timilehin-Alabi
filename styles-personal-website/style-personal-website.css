@@ -89,7 +89,7 @@ button {
     }
 
     .for-text-middle{
-        
+        font-size: 15px;
     }
 }
 
@@ -98,6 +98,7 @@ button {
 
 @media (width < 415px) {
     .page-top {
+        margin-top: 5%;
         min-height: 30vh;
     }
 
