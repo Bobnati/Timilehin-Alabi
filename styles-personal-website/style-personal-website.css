@@ -11,11 +11,16 @@ body {
     position: relative;
 }
 
+.header{
+    position:static;
+}
 
 button {
     border: 1px solid blue;
     padding: 1%;
 }
+
+
 
 
 .page-top {
@@ -98,7 +103,6 @@ button {
 
 @media (width < 415px) {
     .page-top {
-        margin-top: 5%;
         min-height: 30vh;
     }
 
