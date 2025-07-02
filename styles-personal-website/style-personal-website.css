@@ -6,6 +6,9 @@ body {
     background-color:  rgba(199, 95, 113);
     color:black;
     text-align: justify;
+    min-height: 100vh;
+    font-size: 20px;
+    position: relative;
 }
 
 
@@ -16,7 +19,11 @@ button {
 
 
 .page-top {
+
     background-color: rgba(199, 95, 113);
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -25,7 +32,8 @@ button {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 50px;
+    column-gap: 10px;
+    width: 100%;
   /*  border: 2px solid red;*/
  
 }
@@ -41,47 +49,74 @@ button {
 
     display: flex;
     flex-direction: column;
-}
-
-.normal-text {
-    font-size: medium;
+    font-size: 30px;
 }
 
 
 .for-image {
-    flex: 1;
-    margin-left: 2%;
-    margin-top: 4%;
+    flex: 2;
     align-content: center;
 }
 
+@media (width > 1500px) {
 
-@media (width < 550px) { 
-
-    body {
-        min-height: 100vh;
+    .for-text{
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
     }
-    
-    .for-text {
-       flex: 1;
-       width: 50%;
-       font-size: medium;
-        font-weight: bold;
-        margin-top: 5%;
-    }    
+
+    .occupationDesc {
+        font-size: 40px;
+    }
+
+}
+ 
+@media (width < 570px) {
+
+    .for-image{
+        flex: 3;
+        align-content: center;
+    }
+
+    .occupationDesc{
+        font-size: 20px;
+    }
 
     .normal-text {
-        font-size: medium;
-        font-weight: normal;
+        font-size: 15px;
     }
 
-    .for-image {
+    .for-text-middle{
+        
+    }
+}
 
-        width: 50%;
-        margin-top: 5%;
+
+
+
+@media (width < 415px) {
+    .page-top {
+        min-height: 30vh;
+    }
+
+     .for-image{
+        flex: 2;
         align-content: center;
-   
+        
     }
+
+    .occupationDesc{
+        font-size: 18px;
+       
+    }
+
+    .normal-text {
+        font-size: 12px;
+    }
+
+
 }
 
 
@@ -95,21 +130,23 @@ img {
 .page-middle {
     background-image: url('../images-personal-website/office-picture.jpg');
     background-repeat: no-repeat;
-    height: 60vh;
-    align-content: center;
+    min-height: 60vh;
     background-size: cover;
     box-shadow: 0 0 10px rgba(199, 95, 113);
+    display: flex;
+    align-items: center;
+
    
 
 }
 
 .for-text-middle {
-    margin-left: 4%;
+
     background-color: #f8f9fa;
     opacity: 0.9;
-    width:50%;
-    padding: 1%;
+    padding: 2%;
     box-shadow: 0 0 16px gray;
-    border-radius: 3px;
+    border-radius: 20px;
+    margin-left: 2%;
 
 }
