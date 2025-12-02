@@ -21,8 +21,6 @@ body {
 
     background: linear-gradient(to right, rgb(31, 15, 31) 0%, rgb(78, 41, 78) 45%, rgb(78, 41, 78) 55%, rgb(43, 20, 43) 100%);
 
-    color: black;
-
     box-shadow: 0 0 10px black;
 
     border-radius: 8px;
@@ -63,7 +61,7 @@ body {
     border-radius: 8px;
 
     box-shadow: 0 0 5px white;
-    ;
+
 }
 
 .second-section {
@@ -250,9 +248,18 @@ body {
     font-weight: bold;
 }
 
+.transparent-text {
+    color: transparent;
+    background: linear-gradient(to right, red, blue, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+
 .color {
 
-    color: rgb(109, 10, 109)
+    color: rgb(199, 95, 113)
 }
 
 /*

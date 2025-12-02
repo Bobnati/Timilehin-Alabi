@@ -1,6 +1,150 @@
 
 
+class pageElement {
+
+    constructor(minRange, maxRange, theClassName) {
+
+        this.className = theClassName;
+
+        this.element = document.querySelector(`.${this.className}`);
+
+        this.minRange = minRange;
+
+        this.maxRange = maxRange;
+
+        function returnValueFromRange(minRange, maxRange) {
+
+            const rand = Math.random();
+
+            console.log({ minRange, rand })
+
+            return Math.floor(rand * ((maxRange - minRange + 1)) + minRange);
+
+        }
+
+        this.color = {};
+
+        this.color.red = returnValueFromRange(this.minRange.red, this.maxRange.red);
+
+        this.color.blue = returnValueFromRange(this.minRange.blue, this.maxRange.blue);
+
+        this.color.green = returnValueFromRange(this.minRange.green, this.maxRange.green);
+
+        this.adding = {
+
+            red: Math.random() > 0.5,
+
+            blue: Math.random() > 0.5,
+
+            green: Math.random() > 0.5
+
+        }
+
+    }
+
+    updateColorValues() {
+
+        for (const eachColor in this.color) {
+
+            if (this.adding[eachColor]) this.color[eachColor]++;
+
+            else this.color[eachColor]--;
+
+            if (this.color[eachColor] > this.maxRange[eachColor]) this.adding[eachColor] = false;
+
+            else if (this.color[eachColor] < this.minRange[eachColor]) this.adding[eachColor] = true;
+
+        }
+    }
+
+    setElementColor() {
+
+
+
+        const { red, green, blue } = this.color;
+
+        this.element.style.color = "transparent";
+        this.element.style.background = `linear-gradient(to right, rgb(${red}, ${green}, ${blue}) 10%, rgb(${Math.floor(red / 1.5)}, ${Math.floor(green / 1.5)}, ${Math.floor(blue / 1.5)}) 50%, rgb(${red}, ${green}, ${blue}) 100%)`;
+
+        this.element.style.webkitBackgroundClip = "text";
+        this.element.style.backgroundClip = "text";
+    }
+}
+
 const body = document.body;
+
+const elements = [
+
+    new pageElement({
+
+        red: 100,
+        blue: 50,
+        green: 100
+    },
+        {
+            red: 230,
+            blue: 140,
+            green: 230
+
+        },
+        "pageText"),
+
+    new pageElement({
+
+        red: 100,
+        blue: 50,
+        green: 100
+    },
+        {
+            red: 230,
+            blue: 140,
+            green: 230
+
+        },
+        "first-text-add"),
+
+    new pageElement({
+
+        red: 100,
+        blue: 50,
+        green: 100
+    },
+        {
+            red: 230,
+            blue: 140,
+            green: 230
+
+        },
+        "second-image-descriptions"),
+
+    new pageElement({
+
+        red: 100,
+        blue: 50,
+        green: 100
+    },
+        {
+            red: 230,
+            blue: 140,
+            green: 230
+
+        },
+        "third-image-text"),
+
+    new pageElement({
+
+        red: 100,
+        blue: 50,
+        green: 100
+    },
+        {
+            red: 230,
+            blue: 140,
+            green: 230
+
+        },
+        "fourth-image-text")
+]
 
 
 function animateBackground(minRange = {
@@ -84,6 +228,13 @@ function animateBackground(minRange = {
 
         body.style.background = bgdString;
 
+        elements.forEach(element => {
+
+            element.updateColorValues();
+
+            element.setElementColor();
+        })
+
         requestAnimationFrame(runAnimation);
 
     }
@@ -95,13 +246,13 @@ function toggleElements(theElement) {
 
     theElement += "-section";
 
-    console.log(theElement);
-
     theElement = document.querySelector(`.${theElement}`);
 
     theElement.style.transition = `transform 0.3s ease`
 
-    theElement.style.transform = `translateY(${Math.floor(Math.random() * 10)}px)`;
+    if (Math.random() < 0.5) theElement.style.transform = `rotate(${Math.floor(Math.random() * 10)}deg)`;
+
+    else { theElement.style.transform = `rotate(${-Math.floor(Math.random() * 10)}deg)`; }
 
     setTimeout(() => theElement.style.transform = `translateY(0px)`, 800);
 

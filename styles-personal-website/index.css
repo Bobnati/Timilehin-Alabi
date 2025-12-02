@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgba(199, 95, 113);
+    background: linear-gradient(to bottom, rgb(81, 41, 48) 10%, rgb(199, 95, 113) 50%, rgb(87, 37, 46) 100%);
     color: black;
     text-align: justify;
     min-height: 100vh;
@@ -13,6 +13,7 @@ body {
 
 .header {
     position: static;
+    font-size: 12px;
 }
 
 button {
@@ -46,7 +47,7 @@ button {
     flex-direction: row;
     column-gap: 10px;
     width: 100%;
-    /*  border: 2px solid red;*/
+    font-size: 14px;
 
 }
 
