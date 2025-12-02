@@ -74,12 +74,12 @@ const homeElements = [
 
     new pageElement({
 
-        red: 100,
+        red: 10,
         blue: 10,
         green: 10
     },
         {
-            red: 200,
+            red: 80,
             blue: 80,
             green: 80
 
@@ -120,6 +120,8 @@ document.body.addEventListener("touchmove", (event) => {
 
 
     if (event.target.classList.contains("rotatable")) {
+
+        console.log("rotate");
 
         event.target.style.transform = "rotate(5deg)";
 

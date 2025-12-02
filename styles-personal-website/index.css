@@ -7,7 +7,6 @@ body {
     color: black;
     text-align: justify;
     min-height: 100vh;
-    font-size: 20px;
     position: relative;
 }
 
@@ -26,7 +25,7 @@ button {
 
 .page-top {
 
-    background-color: rgba(199, 95, 113);
+    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -47,7 +46,6 @@ button {
     flex-direction: row;
     column-gap: 10px;
     width: 100%;
-    font-size: 14px;
 
 }
 
@@ -56,19 +54,27 @@ button {
     flex: 2;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .occupationDesc {
 
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+
 }
 
 
 .for-image {
     flex: 2;
     align-content: center;
+
+}
+
+.for-image img {
+
+    box-shadow: 0 0 10px black;
+
 }
 
 @media (width > 1500px) {
@@ -80,10 +86,6 @@ button {
         align-items: center;
     }
 
-    .occupationDesc {
-        font-size: 40px;
-    }
-
 }
 
 @media (width < 570px) {
@@ -92,41 +94,18 @@ button {
         flex: 3;
         align-content: center;
     }
-
-    .occupationDesc {
-        font-size: 20px;
-    }
-
-    .normal-text {
-        font-size: 15px;
-    }
-
-    .for-text-middle {
-        font-size: 15px;
-    }
 }
 
 
 
 
 @media (width < 415px) {
-    .page-top {
-        min-height: 30vh;
-    }
+
 
     .for-image {
         flex: 2;
         align-content: center;
 
-    }
-
-    .occupationDesc {
-        font-size: 18px;
-
-    }
-
-    .normal-text {
-        font-size: 12px;
     }
 
 
@@ -135,7 +114,7 @@ button {
 
 img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 8px;
 }
 
 
@@ -148,11 +127,10 @@ img {
     box-shadow: 0 0 10px rgba(199, 95, 113);
     display: flex;
     align-items: center;
+    padding: 8px 10px;
 
     box-shadow: 0 0 10px black;
     border-radius: 8px;
-
-
 
 }
 
@@ -162,15 +140,67 @@ img {
     opacity: 0.9;
     padding: 2%;
     box-shadow: 0 0 16px gray;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-left: 2%;
 
 }
 
-@media (width < 415px) {
+.section-three-text {
 
-    .for-text-middle {
-        width: 50%;
-        margin-left: 10%;
-    }
+    background: linear-gradient(to bottom, rgb(72, 72, 72) 10%, gray 45%, gray 55%, rgb(75, 74, 74) 100%);
+
+    box-shadow: 0 0 10px black;
+
+    padding: 8px 10px;
+
+    margin: 10px 0;
+
+    border-radius: 8px;
+
+    transform: rotate(10deg);
+}
+
+.section-three-image {
+
+    box-shadow: 0 0 10px black;
+
+    border-radius: 8px;
+}
+
+.fourth-section {
+
+    box-shadow: 0 0 10px black;
+
+    border-radius: 8px;
+
+    padding: 0 4px;
+
+    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
+
+    text-align: center;
+
+}
+
+.project1,
+.project2 {
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow-x: scroll;
+}
+
+.project1-image,
+.project2-image {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 15px;
+
+    width: 300%;
+
+    overflow-x: scroll;
 }
