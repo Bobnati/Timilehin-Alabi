@@ -1,12 +1,9 @@
 body {
 
     background: linear-gradient(to bottom, rgb(125, 60, 125) 0%, rgb(78, 25, 78) 40%, rgb(78, 25, 78) 60%, rgb(49, 14, 49) 100%);
+    position: relative;
 }
 
-.header {
-
-    display: hidden;
-}
 
 .entirePage {
     border-radius: 15px;
@@ -87,6 +84,12 @@ body {
 .second-image {
 
     display: flex;
+
+    max-height: 70%;
+
+    max-width: 100%;
+
+    overflow: hidden;
 }
 
 .second-image-text {
@@ -259,7 +262,7 @@ body {
 
 .color {
 
-    color: rgb(199, 95, 113)
+    color: rgb(145, 11, 33)
 }
 
 /*

@@ -99,7 +99,22 @@ const homeElements = [
             green: 90
 
         },
-        "brief-description")
+        "brief-description"),
+
+
+    new pageElement({
+
+        red: 40,
+        blue: 100,
+        green: 100
+    },
+        {
+            red: 100,
+            blue: 150,
+            green: 150
+
+        },
+        "fourth-section-header")
 ];
 
 

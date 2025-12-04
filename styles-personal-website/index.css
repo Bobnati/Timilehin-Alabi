@@ -11,8 +11,8 @@ body {
 }
 
 .header {
-    position: static;
     font-size: 12px;
+    background: linear-gradient(to right, rgb(61, 61, 61) 0%, gray 15%, gray 45%, rgb(61, 61, 61) 100%);
 }
 
 button {
@@ -25,7 +25,7 @@ button {
 
 .page-top {
 
-    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
+    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 35%, gray 65%, rgb(63, 63, 63) 100%);
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -169,15 +169,29 @@ img {
 
 .fourth-section {
 
-    box-shadow: 0 0 10px black;
+    /* box-shadow: 0 0 10px black; */
 
     border-radius: 8px;
 
     padding: 0 4px;
 
-    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
+    /* background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%); */
 
     text-align: center;
+
+}
+
+.fourth-section-header {
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    box-shadow: 0 0 10px black;
+
+    border-radius: 8px;
 
 }
 
@@ -189,6 +203,19 @@ img {
     flex-direction: column;
 
     overflow-x: scroll;
+
+    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
+
+    margin: 10px 0;
+
+    border-radius: 8px;
+}
+
+.project1-text,
+.project2-text {
+
+    padding: 8px 10px;
+
 }
 
 .project1-image,
@@ -203,4 +230,6 @@ img {
     width: 300%;
 
     overflow-x: scroll;
+
+    padding: 8px 10px
 }

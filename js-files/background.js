@@ -254,7 +254,13 @@ function toggleElements(theElement) {
 
     else { theElement.style.transform = `rotate(${-Math.floor(Math.random() * 10)}deg)`; }
 
-    setTimeout(() => theElement.style.transform = `translateY(0px)`, 800);
+    setTimeout(() => theElement.style.transform = `translateY(0px)`, 100);
+
+    const header = document.querySelector('.header');
+
+    header.style.position = 'fixed';
+
+    header.style.zIndex = 10;
 
 }
 
@@ -262,7 +268,7 @@ const pageElements = ["first", "second", "third", "fourth"];
 
 animateBackground();
 
-document.addEventListener('scrollend', () => {
+document.addEventListener('scroll', () => {
 
     pageElements.forEach(element => {
 
