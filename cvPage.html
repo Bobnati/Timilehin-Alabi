@@ -1,463 +1,170 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<!DOCTYPE html>
+<html lang="en">
 
-body, .mainPage {
-    background-color: bisque;
-    background-image: url(images-personal-website/piano-AMCorner-dark.jpg) ;
-    background-size: fit;
-}
-
-.header {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 1fr;
-    color: white;
-}
-
-.wrapImages {
-    width: 100%; 
-}
-
-.motivationText {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    opacity: 1;
-    margin-left: 1%;
-
-}
-
-img {
-    width: 100%;
-    border-radius: 30px;
-}
-.experience {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-image: url(images-personal-website/piano-AMC2.jpg);
-    border-radius: 40px;
-}
-
-.workExperience {
-    margin-right: 1%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 50px;
-    margin-left: 0;
-    color: white;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-
-}
-
-.volExperience {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
-    font-family:'Trebuchet MS';
-    padding-left: 2%;
-    color: white;
-}
-
-details:hover {
-    cursor: pointer;
-}
-
-button {
-    display: inline-block;
-    margin-bottom: 1%;
-    background-color: gray;
-    border-radius: 10px;
-    border: 1px solid gray;
-}
-
-a {
-    text-decoration: none;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="CV of Timilehin Alabi, a deployment engineer experienced in server administration, database migration, PHP runtime configuration, and web development.">
+    <meta name="theme-color" content="#512930">
+    <title>CV | Timilehin Alabi</title>
+    <link rel="icon" href="images-personal-website/bobnati-profile-picture.png">
+    <link rel="stylesheet" href="styles-personal-website/cv.css">
+    <link rel="stylesheet" href="styles-personal-website/site-theme.css">
+    <link rel="stylesheet" href="styles-personal-website/navigation.css">
 </head>
+
 <body>
-    <button> <a href="index.html">
-        Back To Home
-    </a>
-    </button>
-<div class="header">
-<div>
-    <div class="wrapImages">
-    <img src="images-personal-website\profile-pic.png">
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Timilehin Alabi home">TA<span>.</span></a>
+        <nav class="header" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="cvPage.html" aria-current="page">CV</a>
+            <a href="blog.html">About</a>
+        </nav>
+    </header>
 
-</div>
-<div class="motivationText">
-<p> I am an ambitious and extremely self-motivated individual. My
- objective is to secure a reputable career opportunity to fully
-utilise my acquired training and skills, while creating value and making productive 
-contributions to the success of the company/business and mankind at large.
-</p>
+    <main class="cv-page">
+        <section class="cv-intro" aria-labelledby="cv-title">
+            <div>
+                <p class="eyebrow">CURRICULUM VITAE</p>
+                <h1 id="cv-title">Timilehin Alabi</h1>
+                <p class="role-title">Deployment Engineer · Web Developer</p>
+            </div>
+            <button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button>
+            <ul class="contact-list" aria-label="Contact information">
+                <li><a href="mailto:toluwase2alabi@gmail.com">toluwase2alabi@gmail.com</a></li>
+                <li><a href="tel:+2348146799502">+234 814 679 9502</a></li>
+                <li><a href="https://github.com/Bobnati" target="_blank" rel="noopener noreferrer">GitHub profile</a></li>
+            </ul>
+        </section>
 
-<h4>
-    Email: toluwase2alabi@gmail.com
-</h4>
+        <section class="cv-section" aria-labelledby="summary-title">
+            <h2 id="summary-title">Professional summary</h2>
+            <p>
+                Deployment Engineer with experience in Windows server administration, database administration
+                and migration, PHP runtime upgrades, and web application deployment. Skilled in configuring
+                Apache and PHP environments, managing MySQL/MariaDB databases, troubleshooting application
+                and connectivity issues, and managing background services using NSSM. Combines infrastructure
+                support capabilities with practical PHP, JavaScript, and web application development experience.
+            </p>
+        </section>
 
-<h4>
-    Phone: +2348146799502
-</h4>
+        <section class="cv-section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Technical skills</h2>
+            <dl class="skills-grid">
+                <div>
+                    <dt>Server administration</dt>
+                    <dd>Windows Server, macOS Server, Ubuntu Linux, Apache HTTP Server, IIS, server configuration and troubleshooting</dd>
+                </div>
+                <div>
+                    <dt>Database administration</dt>
+                    <dd>MySQL, MariaDB, backups and restoration, schema management, database migration</dd>
+                </div>
+                <div>
+                    <dt>Runtime &amp; application deployment</dt>
+                    <dd>PHP configuration, runtime upgrades, extensions, ionCube Loader, application configuration</dd>
+                </div>
+                <div>
+                    <dt>Service management</dt>
+                    <dd>NSSM, Windows service installation, configuration, monitoring and troubleshooting</dd>
+                </div>
+                <div>
+                    <dt>Web development</dt>
+                    <dd>Golang, PHP, JavaScript, HTML, CSS, Laravel fundamentals</dd>
+                </div>
+                <div>
+                    <dt>Tools &amp; operations</dt>
+                    <dd>Command-line administration, Bash, Git, SQL, application log analysis, technical documentation</dd>
+                </div>
+            </dl>
+        </section>
 
-</div>
-</div>
-<div class="experience">
+        <section class="cv-section" aria-labelledby="experience-title">
+            <h2 id="experience-title">Professional experience</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-heading">
+                        <div>
+                            <h3>Deployment Engineer</h3>
+                        </div>
+                        <p class="date">2026–Present</p>
+                    </div>
+                    <ul>
+                        <li>Deploy, configure, and maintain web applications across Windows server environments.</li>
+                        <li>Administer MySQL and MariaDB databases, including backups, restoration, schema changes, and migrations between database versions and platforms.</li>
+                        <li>Upgrade PHP runtimes and configure extensions and dependencies to maintain application compatibility.</li>
+                        <li>Install and manage background application services and queue workers using NSSM.</li>
+                        <li>Configure and troubleshoot Apache/IIS environments, application connectivity, and server-side runtime issues.</li>
+                        <li>Perform application migrations, environment configuration, deployment validation, and technical documentation.</li>
+                    </ul>
+                </article>
 
+                <article class="timeline-item">
+                    <div class="timeline-heading">
+                        <div>
+                            <h3>Founder</h3>
+                            <p class="organization">DeFi Naija</p>
+                        </div>
+                        <p class="date">2024–Present</p>
+                    </div>
+                    <ul>
+                        <li>Develop and maintain a Web3-focused publishing platform.</li>
+                        <li>Build frontend and backend functionality and content automation workflows.</li>
+                        <li>Manage application features, platform improvements, and technical operations.</li>
+                    </ul>
+                </article>
 
-<div class="workExperience">
-    <h2> Here you will find my Work Experience</h2>
-<div class = "sobani">
-    <h3> Sobani Resources Limited, April 2022 - Present </h3>
-    <h4> Research Writer </h4>
-  
-  <details>
-     
-   <summary> 
-        Role responsibilites
-    </summary>
+                <article class="timeline-item">
+                    <div class="timeline-heading">
+                        <div>
+                            <h3>Frontend Developer</h3>
+                            <p class="organization">Nigeria Cycling Embassy</p>
+                        </div>
+                        <p class="date">2023–2024</p>
+                    </div>
+                    <ul>
+                        <li>Developed the organisation’s frontend website.</li>
+                        <li>Managed website content and implemented user experience improvements.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-     <ul>
-        <li>
-            Conduct comprehensive research across a wide spectrum of topics and research
-            fields spanning from life sciences to environmental sciences and public health.
-        </li>
-        
-        <li>
-            Analyze and interpret research data with the aim of deriving meaningful insights
-            and research conclusions.
-        </li>
-        
-        <li>
-            Verify the precision and reliability of sources and references utilized in research
-            content.
-        </li>
-        
-        <li>
-            Collaborate closely with other researchers, and fellow team members to gather
-            information and glean insights for research projects.
-        </li>
-        
-        <li>
-            Effectively format and revise written research content to ensure clarity, coherence,
-            and compliance with publication standards.
-        </li>
-        
-        <li>
-            Adhere to project deadlines and efficiently manage time to concurrently handle
-            multiple research assignments.
-        </li>
-        
-        <li>
-            Maintain the highest quality standards for research content, meeting the criteria
-            expected in typical academic journals, ensuring no plagiarism, and upholding
-            ethical research principles.
-        </li>
-        </ul>
-</details>
-</div>
+        <section class="cv-section" aria-labelledby="projects-title">
+            <h2 id="projects-title">Selected projects</h2>
+            <div class="project-list">
+                <article>
+                    <h3>Server and database migration</h3>
+                    <p>Migrated database environments between MySQL and MariaDB, addressed schema incompatibilities and data consistency issues, and configured application runtimes and dependencies for updated server environments.</p>
+                </article>
+                <article>
+                    <h3>Application service management</h3>
+                    <p>Configured Windows background services for PHP application workers using NSSM, including execution parameters, working directories, and logging.</p>
+                </article>
+                <article>
+                    <h3>Web application development</h3>
+                    <p>Built PHP applications and interactive JavaScript-based games, implementing application logic, session handling, and routing.</p>
+                </article>
+            </div>
+        </section>
 
-<div class = "NCE">
-    <h3> Nigeria Cycling Embassy, July 2020 - Present  </h3>
-    <h4> Content Chief and Social Media Manager </h4>
+        <section class="cv-section education-section" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <div class="timeline-heading">
+                <div>
+                    <h3>Ekiti State University</h3>
+                    <p class="organization">Microbiology coursework</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <details>
-        <summary>
-            Role responsibilites
-        </summary>
-<ul>
-    <li>
-        Produce high-quality, engaging, and informative content for Nigeria Cycling
-        Embassy website with a primary focus on cycling, sustainable transport, and
-        related topics.
-    </li>
-        
-    <li>
-        Develop compelling narratives that highlight the positive impact of
-        cycling and sustainable transport on individuals and communities, emphasizing
-        personal stories and case studies.
-    </li>
-
-    <li>
-        Conduct in-depth research on cycling trends, sustainable transport solutions,
-        environmental impact, health benefits, and other relevant subjects to ensure
-        content accuracy and relevance.
-    </li>
-
-    <li>
-        Collaborate with the content team to develop content calendars, aligning content
-        with key events, campaigns, and initiatives related to the promotion of cycling.
-    </li>
-
-    <li>
-        Implement best practices for SEO (Search Engine Optimization) to ensure content
-        is discoverable and ranks well on search engines for relevant keywords.
-    </li>
-
-    <li>
-        Review and edit content for clarity, grammar, and style consistency. Ensure that all
-        content is error-free and meets high editorial standards.
-    </li>
-
-    <li>
-        Monitor comments and engage with the online community, responding to
-        questions, comments, and feedback on cycling and sustainable transport topics.
-    </li>
-
-    <li>
-        Manage and update the social media profiles of the blog with fresh and engaging
-        content. Share content to promote discussions and raise awareness about cycling
-        initiatives.
-    </li>
-        Collaborate with other other team members, such as graphic designers to create 
-        integrated content strategies.
-    <li>
-        Ensure that all content complies with copyright laws, data protection regulations,
-        and ethical guidelines.
-    </li>
-
-    <li>
-        Gather feedback from the community and stakeholders to inform content
-        strategies and continuously improve the quality and impact of content.
-    </li>
-    
-    <li>
-        Be prepared to handle potential PR crises by providing well-informed, empathetic,
-        and strategic responses through content..
-    </li>
-
-</details>
-</div>
-
-<div>
-<h3>
-    EduAnalyst NG, July 2021 - April 2022
-</h3>
-
-<h4>Research Writer</h4>
-
-
-<details>
-    <summary>Role responsibilites</summary>
-<ul>
-    <li>
-Conduct thorough research on various topics, ranging from the core sciences to
-environmental sciences and public health.
-</li>
-
-<li>
-Data Analysis: Analyze and interpret data to draw meaningful insights and
-incorporate them into research materials.
-</li>
-
-<li>
-Ensure the accuracy and credibility of sources and references used in research
-content.
-</li>
-Work closely with researchers, subject matter experts, and other team members to
-gather information and insights for research projects.
-<li>
-Format and edit written content for clarity, coherence, and adherence to publication
-level.
-</li>
-
-<li>
-Meet project deadlines and manage time effectively to handle multiple research
-assignments simultaneously.
-</li>
-
-<li>
-Ensure that research content is of the highest quality and at journal standard, free
-from plagiarism, and adheres to ethical research practices.
-</li>
-</ul>
-</details>
-</div>
-
-
-<div>
-<h3>Faculty of Pharmacy, University of Lagos, January 2021 - June 2021</h3>
-
-<h4>Research Writer, Content Writer and Junior Editor</h4>
-
-<details>
-    <summary>
-        Role responsibilites
-    </summary>
-
-   <ul>
-    <li> 
-Perform research on a variety of subjects, spanning from the fundamental
-sciences to areas such as environmental sciences and public health.
-</li>
-
-<li>
-    Write, proofread and edit relevant content for a healthcare startup website.
-</li>
-
-<li>
-    Write and develop systematic reviews, research proposals and other research publications.
-</li>
-
-<li>
-Format and edit written content to ensure it is clear, coherent, and meets
-production and publication standards.
-</li>
-
-<li>
-Maintain SEO standards for article writing, while also ensuring readibility and user engagement.
-</li>
-</ul>
-</details>
-</div>
-
-<div>
-<h3>
-    Market Doctor, January 2019 - May 2019
-</h3>
-
-<h4>
-    Business Development Officer
-</h4>
-
-<details>
-    <summary>
-        Role responsibilites
-    </summary>
-
-    <ul>
-        <li>
-        Develop and execute strategic plans to attract more patients to the clinic. This
-includes analyzing the local healthcare landscape, expanding services, and creating
-awareness through partnerships.
-</li>
-
-<li>
-Collaborate with community and market leaders to organize medical outreaches
-for underserved populations.
-</li>
-
-<li>
-Build relationships, secure suitable venues, and navigate logistic challenges for
-these events.
-</li>
-
-<li>
-Perform routine microbiological tests and measure vital signs using rapid detection
-kits.
-</li>
-
-<li>
-Ensure the accuracy of results, maintain records, and communicate findings for
-patient care.
-</li>
-    </ul>
-</details>
-</div>
-
-<div>
-<h3>
-    Lagos State University College Of
-Medicine, Lagos. March 2016 — September 2016 
-</h3>
-
-<h4>
-    Medical Laboratory Scientist Intern
-</h4>
-
-<details>
-    <summary>
-        Role responsibilites
-    </summary>
-<ul>
-<li>
-Aid the Chief Laboratory Scientists in conducting daily laboratory tasks and
-activities, ensuring smooth lab operations.
-</li>
-
-<li>
-Maintain and update inventory records for laboratory supplies and equipment. Keep
-a detailed log of laboratory tests conducted for reference and record-keeping
-</li>
-</ul>
-
-</div>
-</details>
-
-</div>
-<div class="volExperience">
-   
-   <h2> My volunteer Experience is here </h2>
-
-
-<div>
-    <h3>
-        Aisha Agbaje Initiative
-    </h3>
-    <h4>
-      Logistics Officer
-    </h4>
-<p> April 2018 </p>
-
-<p>Community Outreach Program in Makoko, Lagos, Nigeria.
-    </p>
-</div>
-
-<div>
-    <h3>
-    Safer Hands Initiative
-</h3>
-
-<h4>
-   Media Representative
-</h4>
-
- <p>Aug 2018 - Present </p> 
-    <p>· 5 yrs 4 months </p>
-
-
-<details style="line-height: 2;">
-<p>
-    <summary>
-        View details
-    </summary>
-Safer Hands Initiative is an organisation that has a vision to drastically 
-improve maternal and child health service delivery in Nigeria. 
-
-Our core strategy is to address Nigeria's maternal health challenges and 
-provide evidence based solutions particularly at the grassroots level.
-
-We have served local communities in Lagos, Ogun, Osun and Oyo states with 
-the eventual plan to scale to the entire Nigerian population.
- Check out what we do at saferhandsinitiative.com
-</p>
-</details>
-</div>
-
-<div>
-    <h3>Boskoh HMI</h3>
-    <h4> Covid Protocol Officer </h4>
-    <details style="line-height: 2;">
-        <summary>
-            View details
-        </summary>
-    <p >
-        At this medical outreach event hosted by the Government of Lagos state 
-        BOSKOH HMI, I was responsible for establishing proper procedures, crowd control, 
-        and ensure the smooth delivery of the free health care services to the beneficiaries at 
-        the event.
-    </p>
-</details>
-
-
-<p>Jun 2021 - Present </p> 
-<p>· 2 yrs 6 mos</p>
-</div>
-</div>
-
+    <footer class="cv-footer">
+        <a href="portfolio.html">← Back to portfolio</a>
+        <a href="mailto:toluwase2alabi@gmail.com">Get in touch</a>
+    </footer>
 </body>
-
-
 
 </html>

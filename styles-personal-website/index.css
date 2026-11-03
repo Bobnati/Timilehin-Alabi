@@ -4,7 +4,7 @@ html {
 
 body {
     background: linear-gradient(to bottom, rgb(81, 41, 48) 10%, rgb(199, 95, 113) 50%, rgb(87, 37, 46) 100%);
-    color: black;
+    color: #171517;
     text-align: justify;
     min-height: 100vh;
     position: relative;
@@ -202,9 +202,9 @@ img {
 
     flex-direction: column;
 
-    overflow-x: scroll;
+    overflow: hidden;
 
-    background: linear-gradient(to bottom, rgb(63, 63, 63) 10%, gray 45%, gray 55%, rgb(63, 63, 63) 100%);
+    background: linear-gradient(to bottom, #3f3f3f 10%, #b6b4b5 35%, #b6b4b5 65%, #3f3f3f 100%);
 
     margin: 10px 0;
 
@@ -221,15 +221,55 @@ img {
 .project1-image,
 .project2-image {
 
-    display: flex;
-
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
     gap: 15px;
 
-    width: 300%;
+    width: 100%;
 
-    overflow-x: scroll;
+    padding: 8px 10px;
+}
 
-    padding: 8px 10px
+.project1-image > div,
+.project2-image > div {
+    min-width: 0;
+}
+
+.section-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+    margin-block: 20px;
+}
+
+@media (max-width: 650px) {
+    .brief-description {
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .for-text,
+    .for-image {
+        width: 100%;
+    }
+
+    .for-image {
+        max-width: 360px;
+    }
+
+    .section-three {
+        grid-template-columns: 1fr;
+    }
+
+    .section-three-text {
+        transform: none;
+    }
+
+    .project1-image,
+    .project2-image {
+        grid-template-columns: 1fr;
+    }
 }

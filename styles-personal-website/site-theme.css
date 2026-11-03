@@ -1,0 +1,51 @@
+:root {
+    --theme-page: #512930;
+    --theme-page-light: #c75f71;
+    --theme-panel: #b8b6b7;
+    --theme-panel-light: #ededed;
+    --theme-ink: #171517;
+    --theme-muted: #423c40;
+    --theme-accent: #74223b;
+    --theme-border: rgba(25, 20, 23, 0.18);
+    --theme-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--theme-font);
+    line-height: 1.65;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: 1px solid var(--theme-accent);
+    border-radius: 8px;
+    cursor: pointer;
+    font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--theme-accent);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
